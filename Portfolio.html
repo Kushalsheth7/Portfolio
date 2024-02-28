@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/d654a4c1bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Portfolio images/Logo.png" alt="" class="logo">
+            <ul id="side">
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profeciency">Proficiency</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closem()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openm()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="header-1">Web Developer</p>
+            <h1 class="header-2">Hi, I'm <span>Kushal<br></span></h1>
+        </div>
+       
+        
+    </div>
+ </div>   
+
+
+ <!--  -->
+ <div id="about" >
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1 ">
+                <img src="Portfolio images/user.png" alt="">
+            </div>
+            <div class="about-col-2 ">
+                <h1 class="subtitle">About Me</h1><br>
+                <p>Hi there! I'm Kushal, a college student passionate about Coding. Through my portfolio, I share my journey, projects, and insights in Web developing. Let's connect and explore the possibilities together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('eductaion')">Eductaion</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python, Java, C</li><br>
+                        <li><span>Web Development</span><br>HTML, CSS, JS, Bootstrap</li><br>
+                        <li><span>Data Structures</span><br>Data Structures using Java</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Introduction to Java - LearnQuest</li><br>
+                        <li><span>2023</span><br>Inheritance and Data Structures in Java - Penn University of Pennsylvania</li><br>
+                        <li><span>2023</span><br>Database Design and Basic SQL in PostgreSQL - University of Michigan</li><br>
+                        <li><span>2024</span><br>HTML, CSS, and Javascript for Web Developers - Johns Hopkins University.</li><br>
+                        <li><span>2024</span><br>Internship at CODSOFT</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eductaion">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Studying at L.J. University</li><br>
+                        <li><span>2022</span><br>HSC-Exam from A.G. High School</li><br>
+                        <li><span>2020</span><br>SSC-Exam from A.G. High SChool</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!--  proficiency bars  -->
+    <div id="profeciency">
+        <br><br><br><br>
+    <div class="container1" >
+        <div class="row1">
+            <div class="proficiency-img">
+                <img src="Portfolio images/Profeciency.png" height="200px" alt="">
+            </div>
+            <div class="col-2">
+            <div class="proficiency-bar">
+            <h1>Proficiencies</h1><br>  
+            <div class="skill">Web Developing</div>
+            <div class="bar">
+                <div class="bar-fill" style="width: 80%;"></div>
+            </div>
+        </div>
+        
+        <div class="proficiency-bar">
+            <div class="skill">Programming</div>
+            <div class="bar">
+                <div class="bar-fill" style="width: 70%;"></div>
+            </div>
+    </div>
+    <div class="proficiency-bar">
+        <div class="skill">Data Structures</div>
+        <div class="bar">
+            <div class="bar-fill" style="width: 60%;"></div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<br><br><br>
+ <!--  -->
+ <div id="services" >
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting visually stunning and user-friendly websites tailored to your needs. I blend creativity with functionality to deliver exceptional web experiences that leave a lasting impression.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating intuitive and engaging user interfaces that elevate your digital products. I prioritize user experience to ensure seamless interaction and maximum satisfaction.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p>Designing captivating and functional mobile applications that stand out in the crowded app marketplace. From concept to execution, I focus on delivering apps that users love to use.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ 
+
+ <!--  -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Portfolio images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Basic Calculator</h3>
+                    <p>Developed a simple yet efficient basic calculator application using HTML, CSS, and JavaScript. This calculator performs standard arithmetic operations and provides a user-friendly interface for quick calculations.</p>
+                    <a href="Calculator.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Currency Converter</h3>
+                    <p>Created a currency converter tool utilizing real-time exchange rates from various financial APIs. This converter supports multiple currencies and provides accurate conversion results for international transactions.</p>
+                    <a href="Other Projects/Project.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>Designed and implemented a classic Tic-Tac-Toe game. This game offers an enjoyable experience for players of all ages and skill levels.</p>
+                    <a href="Other Projects/TicTacToe.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <span id="btn"><a href="#see" class="btn"  onclick="opens()">See More</a></span>
+    </div>
+ </div>
+ <div id="see">
+    <div class="container">
+        <div class="work-list">
+            <div class="work">
+                <img src="Portfolio images/work-4.png" alt="">
+                <div class="layer">
+                    <h3>Inventory Management System</h3>
+                    <p>Inventory Management System using Data Structures</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio images/work-5.png" alt="">
+                <div class="layer">
+                    <h3>College Management System</h3>
+                    <p>College Management System using PostgreSQL</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Portfolio images/work-6.png" alt="">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Simple Rock Paper Scissors game vs Computer</p>
+                    <a href="Other Projects/RPS.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn"  onclick="closes(event)" >Close</a>
+ </div>
+ </div>
+
+
+ 
+ 
+
+
+<!--  -->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements and Certifications</h1>
+        <div class="achievement-list">
+            <div class="achievement">
+                <span>2023</span><br>
+                <div class="description">
+                    <h3>Introduction to Java</h3>
+                    <p>An introductory course to Java programming offered by LearnQuest.</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <span>2023</span><br>
+                <div class="description">
+                    <h3>Inheritance and Data Structures in Java</h3>
+                    <p>A course focusing on inheritance and data structures in Java from Penn University of Pennsylvania.</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <span>2023</span><br>
+                <div class="description">
+                    <h3>Database Design and Basic SQL in PostgreSQL</h3>
+                    <p>A course covering database design and basic SQL in PostgreSQL offered by the University of Michigan.</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <span>2024</span><br>
+                <div class="description">
+                    <h3>HTML, CSS, and Javascript for Web Developers </h3>
+                    <p>A comprehensive course on web development technologies offered by Johns Hopkins University.</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <span>2024</span><br>
+                <div class="description">
+                    <h3>Web Developer Internship</h3>
+                    <p>A very good experience working as a intern at Codsoft.</p>
+                </div>
+            </div>
+            
+            
+                   <div class="achievement-img">
+                    <img src="Portfolio images/Certificate.png" alt="">
+                   </div>
+                
+        
+        </div>
+        <div class="certificate-download">
+            <a href="Portfolio images/certificates.pdf" download class="btn">Download Certificates PDF</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+ <!--  -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>kushalsheth07@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8690780780</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kushal-sheth-b47053267" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="Portfolio images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights <br><br> <p> &copy; Pinterest</p> &copy; fontawesome </p>
+    </div>
+ </div>
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+
+    function opentab(tabName){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabName).classList.add("active-tab")
+    }
+    
+    var see= document.getElementById("see")
+    var btn=  document.getElementById("btn")
+    function closes(event){
+        event.preventDefault()
+        see.style.display="none"
+        btn.style.display="block"
+
+    }
+    function opens(){
+        btn.style.display="none"
+        see.style.display="block"
+        
+    }
+
+
+   var sidem=document.getElementById("side")
+   function closem(){
+       sidem.style.right="-200px"
+   }
+   function openm(){
+       sidem.style.right="0"
+   }
+
+    
+ </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2vUXPZqhk-PbarqkQa9EYh-K4_iI29RPUclFeIGvXlf1K7KuePtBbUB-3IJPVkU37hg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ 
+</body>
+</html>
